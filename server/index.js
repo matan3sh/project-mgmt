@@ -3,7 +3,7 @@ require("dotenv").config();
 const connectDB = require("./config/db");
 
 const { graphqlHTTP } = require("express-graphql");
-const schema = require("./schema/schema");
+const schema = require("./graphql/schema");
 
 const PORT = process.env.PORT || 4000;
 const app = express();
